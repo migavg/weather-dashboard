@@ -1,9 +1,13 @@
 var searchFormElement = document.querySelector("#search-form");
 var searchButton = document.getElementById("search-btn");
 var weatherInfo = document.getElementById("weather-info-container");
+var weatherCity =  document.getElementById("citySearch");
+
 
 function getApi() {
-    var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=phoenix&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial";
+
+    var citySearch = weatherCity.value;
+    var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial";
 
     fetch(weatherUrl)
         .then(function (response) {
