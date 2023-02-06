@@ -14,10 +14,15 @@ function getApi() {
             return response.json();
         })
         .then(function (data) {
-            console.log(data.main.temp);
-            var currentTemp =document.createElement('p');
-            currentTemp.textContent = data.main.temp;
-            weatherInfo.append(currentTemp);
+                console.log(data.main.temp);
+                console.log(citySearch);
+        var currentCity = document.createElement("p");
+        var currentTemp = document.createElement("p");
+        currentTemp.textContent = data.main.temp;
+        currentCity.textContent = citySearch;
+
+        weatherInfo.append(currentCity);
+        weatherInfo.append(currentTemp);
             
         })
 
