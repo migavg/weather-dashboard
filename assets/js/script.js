@@ -1,11 +1,11 @@
 var searchFormElement = document.querySelector("#search-form");
 var searchButton = document.getElementById("search-btn");
 var weatherInfo = document.getElementById("weather-info-container");
-var weatherForecast = document.getElementById("five-day-container");
 var weatherCity =  document.getElementById("citySearch");
+var weatherForecast1 = document.getElementById("forecast-one");
 
 
-function getApi() {
+function getWeather() {
 
     var citySearch = weatherCity.value;
     var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial";
@@ -68,11 +68,11 @@ function fiveDayForecast () {
             wind.textContent = "Wind Speed: " + data.list[weatherDay].wind.speed + "MPH";
             humidity.textContent = "Humidity " + data.list[weatherDay].main.humidity + "%";
 
-            weatherForecast.appendChild(temp);
-            weatherForecast.appendChild(wind);
-            weatherForecast.appendChild(humidity);
+            weatherForecast1.appendChild(temp);
+            weatherForecast1.appendChild(wind);
+            weatherForecast1.appendChild(humidity);
         }
 })
 };
 
-searchButton.addEventListener("click", getApi);
+searchButton.addEventListener("click", getWeather);
