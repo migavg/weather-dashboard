@@ -13,7 +13,6 @@ Appending the data and displaying on the html was fun, there wasn’t much time 
 
 Deployed link:
 
-![](assets/images/weatherDash.png)
 
 
 
