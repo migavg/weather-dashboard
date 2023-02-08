@@ -6,7 +6,7 @@ This week’s challenge was to create a weather dashboard using a weather API.
 
 In the beginning of the challenge I sat down and physically wrote on a piece of paper pseudo-code steps that I would have to do in order to get a decent idea on how to approach this.
 
-The weather API’s documentation was pretty easy to understand, however pulling and displaying the proper information from the information array gave me more trouble than I thought. The majority of the time I was figuring out which object contained certain data.
+The weather API’s documentation was pretty easy to understand, however pulling and displaying the proper information from the information array, gave me more trouble than I thought. The majority of the time I was figuring out which object contained certain data.
 
 Appending the data and displaying on the html was fun, there wasn’t much time left to style so it looks very bare bones. Unfortunately I did not complete some of the criteria. 
 
@@ -14,7 +14,7 @@ Appending the data and displaying on the html was fun, there wasn’t much time 
 Deployed link:
 
 
-
+![](assets/images/weatherDash.PNG)
 
 ## Installation
 
