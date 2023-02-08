@@ -14,7 +14,7 @@ var weatherForecast5 = document.getElementById("forecast-five");
 function getWeather() {
 
     var citySearch = weatherCity.value;
-    var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial";
+    var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial";
 
     fetch(weatherUrl)
         .then(function (response) {
@@ -55,7 +55,7 @@ function getWeather() {
 
 function fiveDayForecast() {
     var citySearch = weatherCity.value;
-    var fiveDayWeather = "http://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial&cnt=5";
+    var fiveDayWeather = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial&cnt=5";
 
     fetch(fiveDayWeather)
         .then(function (response) {
