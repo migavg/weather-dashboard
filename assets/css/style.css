@@ -1,0 +1,13 @@
+.weatherCardContainer {
+display: flex;
+justify-content: space-around;
+}
+
+.weatherCard {
+background-color: rgb(174, 233, 233);
+height: 185px;
+width: 205px;
+text-align: center;
+padding-top: 5px;
+}
+
