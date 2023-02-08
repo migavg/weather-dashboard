@@ -10,7 +10,7 @@ The weather API’s documentation was pretty easy to understand, however pulling
 
 Appending the data and displaying on the html was fun, there wasn’t much time left to style so it looks very bare bones. Unfortunately I did not complete some of the criteria. 
 
-(Side Note: Not sure why it won't work in chrom but it works on edge)
+(Side Note: Not sure why it won't work in chrome but it works on edge)
 
 
 Deployed link:
