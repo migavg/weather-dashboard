@@ -164,7 +164,7 @@ function fiveDayForecast() {
             weatherForecast5.appendChild(humidity);
         })
         
-    // Adds classes to the weather forecast divs for basic styling
+    // Adds classes to the weather forecast divs for basic styling 
         
         weatherForecast.classList.add("weatherCardContainer");
         weatherForecast1.classList.add("weatherCard");
