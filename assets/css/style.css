@@ -11,3 +11,21 @@ text-align: center;
 padding-top: 5px;
 }
 
+.button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(86, 86, 242);
+    color: white;
+    width: 80px;
+}
+
+.button:hover {
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(28, 28, 106);
+    color: white;
+    width: 80px;
+    cursor: pointer;
+
+}

@@ -9,8 +9,6 @@ var weatherForecast4 = document.getElementById("forecast-four");
 var weatherForecast5 = document.getElementById("forecast-five");
 
 
-
-
     // Function that grabs current weather and appends it to a div, then runs 5 day forecast
 
 function getWeather() {
