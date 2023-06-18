@@ -9,6 +9,7 @@ height: 185px;
 width: 205px;
 text-align: center;
 padding-top: 5px;
+justify-content: center;
 }
 
 .button {
@@ -28,4 +29,9 @@ padding-top: 5px;
     width: 80px;
     cursor: pointer;
 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
