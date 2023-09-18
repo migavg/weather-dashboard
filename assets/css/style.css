@@ -1,21 +1,21 @@
 .weatherCardContainer {
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .weatherCard {
-background-color: rgb(174, 233, 233);
-height: 185px;
-width: 205px;
-text-align: center;
-padding-top: 5px;
-justify-content: center;
+    background-color: rgb(174, 233, 233);
+    height: 185px;
+    width: 205px;
+    text-align: center;
+    padding-top: 5px;
+    justify-content: center;
 }
 
 .button {
     margin-top: 25px;
     margin-bottom: 25px;
-    background-color: rgb(86, 86, 242);
+    background-color: rgb(104, 134, 203);
     color: white;
     border-radius: 1rem;
     font-size: 2rem;
@@ -27,7 +27,7 @@ justify-content: center;
 
     margin-top: 25px;
     margin-bottom: 25px;
-    background-color: rgb(28, 28, 106);
+    background-color: rgb(79, 79, 177);
     color: white;
     border: none;
     cursor: pointer;
@@ -37,16 +37,18 @@ justify-content: center;
 .container {
     display: flex;
     justify-content: center;
+
 }
 
- h1 {
-    color: black;
+h1 {
+    color: white;
     font-family: arial;
     font-size: 3rem;
+    
 }
 
 h2 {
-    color:black; 
+    color: white;
     font-family: arial;
     font-size: 2rem;
 }
@@ -55,10 +57,12 @@ h2 {
     font-size: 2rem;
     text-align: center;
     border-radius: 1rem;
+    border: none;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgb(112, 179, 242),rgb(130, 168, 199));
 }
