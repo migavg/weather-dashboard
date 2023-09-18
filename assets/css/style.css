@@ -17,7 +17,10 @@ justify-content: center;
     margin-bottom: 25px;
     background-color: rgb(86, 86, 242);
     color: white;
-    width: 80px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border: none;
+    padding: 1rem;
 }
 
 .button:hover {
@@ -26,7 +29,7 @@ justify-content: center;
     margin-bottom: 25px;
     background-color: rgb(28, 28, 106);
     color: white;
-    width: 80px;
+    border: none;
     cursor: pointer;
 
 }
@@ -34,4 +37,28 @@ justify-content: center;
 .container {
     display: flex;
     justify-content: center;
+}
+
+ h1 {
+    color: black;
+    font-family: arial;
+    font-size: 3rem;
+}
+
+h2 {
+    color:black; 
+    font-family: arial;
+    font-size: 2rem;
+}
+
+.textbox {
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
