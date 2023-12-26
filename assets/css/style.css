@@ -43,6 +43,9 @@
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     color: white;
     font-family: arial;
     font-size: 3rem;
@@ -73,7 +76,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(112, 179, 242), rgb(130, 168, 199));
+    background-image: linear-gradient(rgb(138, 196, 251), rgb(171, 213, 245),rgb(138, 196, 251));
+    height: 100%;
 }
 
 .weather-icon {
