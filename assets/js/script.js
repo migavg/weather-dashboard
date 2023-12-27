@@ -19,15 +19,31 @@ function getWeather() {
     var citySearch = weatherCity.value;
     var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=1585e0bbf2dbcb702a5708a67bf3b74d&units=imperial";
 
+
+    if (!citySearch) {
+        alert("Please enter a city.");
+        return;
+    }
+
+
     fetch(weatherUrl)
+
         .then(function (response) {
             return response.json();
         })
+
+        
         .then(function (data) {
+
+          
+            console.log(data);
+
             console.log(data.main.temp);
             console.log(data.wind.speed);
             console.log(data.main.humidity);
             console.log(citySearch);
+
+           
 
             var currentCity = document.createElement("p");
             var currentTemp = document.createElement("p");
@@ -35,10 +51,15 @@ function getWeather() {
             var currentHum = document.createElement("p");
 
 
-
             /// clears the previous search
             weatherInfo.innerHTML = "";
 
+            if (data.cod === '404') {
+                alert("Please enter a valid city name.");
+                return;
+            }
+
+            else {
             currentCity.textContent = "Current Temp in: " + citySearch;
             currentTemp.textContent = "Temperature " + data.main.temp + "°F";
             currentWind.textContent = "Wind Speed: " + data.wind.speed + "MPH";
@@ -50,7 +71,14 @@ function getWeather() {
             weatherInfo.append(currentTemp);
             weatherInfo.append(currentWind);
             weatherInfo.append(currentHum);
-        })
+
+        }
+        }
+        
+        
+        )
+        
+
 
     weatherInfo.classList.add("weatherCard");
 
