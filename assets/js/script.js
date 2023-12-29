@@ -41,6 +41,7 @@ function getWeather() {
             console.log(data.main.humidity);
             console.log(citySearch);
             console.log(data.name);
+         
          showWeather(data);
 
         }
@@ -57,23 +58,23 @@ function getWeather() {
 function showWeather(data) {
 
     var currentCity = document.createElement("p");
-    // var currentTemp = document.createElement("p");
-    // var currentWind = document.createElement("p");
-    // var currentHum = document.createElement("p");
+    var currentTemp = document.createElement("p");
+    var currentWind = document.createElement("p");
+    var currentHum = document.createElement("p");
 
 
     /// clears the previous search
     weatherInfo.innerHTML = "";
 
     currentCity.textContent = "Current Temp in: " + data.name;
-    // currentTemp.textContent = "Temperature " + data.main.temp + "°F";
-    // currentWind.textContent = "Wind Speed: " + data.wind.speed + "MPH";
-    // currentHum.textContent = "Humidity " + data.main.humidity + "%";
+    currentTemp.textContent = "Temperature " + data.main.temp + "°F";
+    currentWind.textContent = "Wind Speed: " + data.wind.speed + "MPH";
+    currentHum.textContent = "Humidity " + data.main.humidity + "%";
 
     weatherInfo.append(currentCity);
-    // weatherInfo.append(currentTemp);
-    // weatherInfo.append(currentWind);
-    // weatherInfo.append(currentHum);
+    weatherInfo.append(currentTemp);
+    weatherInfo.append(currentWind);
+    weatherInfo.append(currentHum);
 
 
     weatherInfo.classList.add("weatherCard");
