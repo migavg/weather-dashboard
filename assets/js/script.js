@@ -32,59 +32,55 @@ function getWeather() {
             return response.json();
         })
 
-        
+
         .then(function (data) {
 
-          
             console.log(data);
-
             console.log(data.main.temp);
             console.log(data.wind.speed);
             console.log(data.main.humidity);
             console.log(citySearch);
-
-           
-
-            var currentCity = document.createElement("p");
-            var currentTemp = document.createElement("p");
-            var currentWind = document.createElement("p");
-            var currentHum = document.createElement("p");
-
-
-            /// clears the previous search
-            weatherInfo.innerHTML = "";
-
-            if (data.cod === '404') {
-                alert("Please enter a valid city name.");
-                return;
-            }
-
-            else {
-            currentCity.textContent = "Current Temp in: " + citySearch;
-            currentTemp.textContent = "Temperature " + data.main.temp + "°F";
-            currentWind.textContent = "Wind Speed: " + data.wind.speed + "MPH";
-            currentHum.textContent = "Humidity " + data.main.humidity + "%";
-
-
-
-            weatherInfo.append(currentCity);
-            weatherInfo.append(currentTemp);
-            weatherInfo.append(currentWind);
-            weatherInfo.append(currentHum);
+            console.log(data.name);
+         showWeather(data);
 
         }
-        }
-        
-        
         )
-        
+
+
+
+   
+
+    // fiveDayForecast();
+};
+
+
+function showWeather(data) {
+
+    var currentCity = document.createElement("p");
+    // var currentTemp = document.createElement("p");
+    // var currentWind = document.createElement("p");
+    // var currentHum = document.createElement("p");
+
+
+    /// clears the previous search
+    weatherInfo.innerHTML = "";
+
+    currentCity.textContent = "Current Temp in: " + data.name;
+    // currentTemp.textContent = "Temperature " + data.main.temp + "°F";
+    // currentWind.textContent = "Wind Speed: " + data.wind.speed + "MPH";
+    // currentHum.textContent = "Humidity " + data.main.humidity + "%";
+
+    weatherInfo.append(currentCity);
+    // weatherInfo.append(currentTemp);
+    // weatherInfo.append(currentWind);
+    // weatherInfo.append(currentHum);
 
 
     weatherInfo.classList.add("weatherCard");
 
 
-    fiveDayForecast();
 };
+
 
 
 // Function that grabs 5 day forecast and appends it to respective div in html  
